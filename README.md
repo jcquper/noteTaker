@@ -7,5 +7,5 @@ https://git.heroku.com/notetaker2345t.git
 ![Note Taker Demo](Demo/Capture.JPG)
 ![Note Taker Demo](Demo/capture3.JPG)
 ![Note Taker Demo](Demo/Capture2.JPG)
-![Note Taker Demo](Demo/capture4.JPG)
+![Note Taker Demo](Demo/capture4.jpg)
 
