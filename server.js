@@ -12,11 +12,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-app.get("/notes", (request, response) => {
+app.get("/notes", (_request, response) => {
     response.sendFile(path.join(__dirname + "/notes.html"));
 });
 
-app.get("/api/notes", (request, response) => {
+app.get("/api/notes", (_request, response) => {
     response.sendFile(path.join(__dirname + "/db/db.json"));
 });
 
@@ -33,9 +33,9 @@ app.delete("/api/notes/:id", function (request, response) {
     let newNotes = notes.filter(note => note.id !== request.params.id);
     fs.writeFileSync(path.join(__dirname + "/db/db.json"), JSON.stringify(newNotes));
     response.end();
-})
+});
 
-app.get("*", function(request, response){
+app.get("*", function(_request, response){
     response.sendFile(path.join(__dirname + "/index.html"));
 });
 
@@ -43,4 +43,4 @@ app.get("*", function(request, response){
 
 app.listen(PORT, function () {
     console.log("Online " + PORT);
-})
+});

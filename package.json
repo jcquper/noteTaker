@@ -4,7 +4,7 @@
   "description": "Create Note Taker with Express and Deploy to Heroku",
   "main": "server.js",
   "scripts": {
-    "start": "/public/assets/js/index.js",
+    "start": "server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jackie Perez",
